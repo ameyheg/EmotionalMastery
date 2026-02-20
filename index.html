@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Mastery | 10x Leadership</title>
+    <meta name="description"
+        content="Master Your Emotions, Transform Anger, and Resolve Conflict with Confidence. A deep dive into Emotional Intelligence.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+    <!-- 10x Neural Network Canvas Background -->
+    <canvas id="neural-net" aria-hidden="true"></canvas>
+
+    <!-- Cinematic Atmosphere -->
+    <div id="cursor-glow"></div>
+    <div class="noise-overlay"></div>
+    <div class="ambient-orbs">
+        <div class="orb orb-primary"></div>
+        <div class="orb orb-secondary"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav sticky">
+        <div class="container nav-container">
+            <div class="logo group">
+                <i data-lucide="zap" class="logo-icon"></i>
+                <span class="gradient-text gradient-primary font-outfit font-bold">EMOTIONAL MASTERY</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#ei" class="nav-link">Intelligence</a></li>
+                <li><a href="#anger" class="nav-link">Anger</a></li>
+                <li><a href="#conflict" class="nav-link">Conflict</a></li>
+                <li><a href="#action" class="btn btn-nav btn-glow">Start Protocol</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text-wrapper reveal fade-up">
+                <div class="hero-badge badge-glow">The Executive Protocol</div>
+                <h1 class="hero-title font-outfit">
+                    Master Your <span class="text-white">Emotions.</span><br>
+                    Transform <span class="gradient-text gradient-fire highlight-shadow">Anger.</span><br>
+                    Resolve <span class="gradient-text gradient-teal highlight-shadow">Conflict.</span>
+                </h1>
+                <p class="hero-subtitle text-gray-400 font-jakarta reveal fade-up delay-1">
+                    Equipping elite leaders with science-backed frameworks, neurological self-awareness tools, and
+                    real-world strategies to navigate human dynamics with unprecedented clarity.
+                </p>
+                <div class="hero-actions reveal fade-up delay-2">
+                    <a href="#ei" class="btn btn-primary btn-lg btn-glow">Begin Protocol <i
+                            data-lucide="arrow-right"></i></a>
+                    <a href="#cost" class="btn btn-outline btn-lg"><i data-lucide="play-circle"></i> View Impact</a>
+                </div>
+            </div>
+
+            <!-- Floating Decorative Elements -->
+            <div class="hero-floating-elements reveal fade-in delay-3">
+                <div class="float-card glass-panel tilt-element" data-tilt-speed="200" data-tilt-max="15">
+                    <div class="card-icon gradient-primary"><i data-lucide="brain"></i></div>
+                    <div>
+                        <h4 class="font-outfit text-white text-sm">Neurology First</h4>
+                        <p class="text-gray-400 text-xs">Hack your amygdala response.</p>
+                    </div>
+                </div>
+                <div class="float-card float-card-2 glass-panel tilt-element" data-tilt-speed="200" data-tilt-max="15">
+                    <div class="card-icon gradient-teal"><i data-lucide="shield-check"></i></div>
+                    <div>
+                        <h4 class="font-outfit text-white text-sm">Tactical Empathy</h4>
+                        <p class="text-gray-400 text-xs">Disarm high-friction scenarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="text-xs text-gray-500 tracking-widest uppercase mb-2">Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cost of Inaction Section -->
+    <section class="cost-section section-padding" id="cost">
+        <div class="container">
+            <div class="section-header text-center max-w-3xl mx-auto reveal fade-up">
+                <h2 class="section-title font-outfit text-white">The Price of <span
+                        class="gradient-text gradient-error">Illiteracy</span></h2>
+                <p class="section-desc text-gray-400 font-jakarta text-lg">Ignoring emotional dynamics isn't just a
+                    culture problem. It is the most expensive operational leak in modern leadership.</p>
+            </div>
+
+            <div class="stats-grid">
+                <!-- Stat 1 -->
+                <div class="stat-card glass-panel group tilt-element reveal fade-up">
+                    <div class="stat-icon-wrapper gradient-error">
+                        <i data-lucide="clock" class="text-white"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-value font-outfit text-white count-up" data-target="2.8">0<span>H</span></h3>
+                        <p class="stat-label text-gray-400 font-jakarta text-sm">Spent dealing with conflict weekly per
+                            US employee.</p>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <!-- Stat 2 -->
+                <div class="stat-card glass-panel group tilt-element reveal fade-up delay-1">
+                    <div class="stat-icon-wrapper gradient-primary">
+                        <i data-lucide="dollar-sign" class="text-white"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-value font-outfit text-white count-up" data-target="359">0<span>B</span></h3>
+                        <p class="stat-label text-gray-400 font-jakarta text-sm">In paid hours lost to workplace
+                            friction annually.</p>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <!-- Stat 3 -->
+                <div class="stat-card glass-panel group tilt-element reveal fade-up delay-2">
+                    <div class="stat-icon-wrapper gradient-teal">
+                        <i data-lucide="users" class="text-white"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-value font-outfit text-white count-up" data-target="80">0<span>%</span></h3>
+                        <p class="stat-label text-gray-400 font-jakarta text-sm">Of turnover is driven by poor
+                            management and toxic culture.</p>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                <!-- Stat 4 -->
+                <div class="stat-card glass-panel group tilt-element reveal fade-up delay-3">
+                    <div class="stat-icon-wrapper gradient-fire">
+                        <i data-lucide="activity" class="text-white"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-value font-outfit text-white count-up" data-target="19">0<span>%</span></h3>
+                        <p class="stat-label text-gray-400 font-jakarta text-sm">Increased risk of heart disease from
+                            chronic anger.</p>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider">
+        <div class="line"></div>
+        <div class="diamond"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Emotional Intelligence Section -->
+    <section class="ei-section section-padding relative" id="ei">
+        <div class="container">
+            <div class="grid-2-col gap-16 items-center">
+
+                <div class="content-side reveal fade-right">
+                    <div class="section-kicker badge-primary mb-4">Module 01</div>
+                    <h2 class="section-title font-outfit text-white text-5xl mb-6">The Master Skill of the <span
+                            class="gradient-text gradient-primary">21st Century</span></h2>
+
+                    <p class="body-text text-gray-400 font-jakarta text-lg mb-6 leading-relaxed">
+                        IQ gets you hired. Emotional Intelligence gets you promoted. It accounts for nearly 90% of what
+                        sets high-performers apart from technical peers.
+                    </p>
+
+                    <blockquote class="premium-quote mb-8 glass-panel border-l-primary">
+                        <p class="text-white font-outfit text-xl italic mb-4">"Between stimulus and response there is a
+                            space. In that space is our power to choose our response."</p>
+                        <footer class="text-gray-500 font-jakarta text-sm">— Viktor Frankl</footer>
+                    </blockquote>
+
+                    <ul class="feature-list mt-8">
+                        <li><i data-lucide="check-circle" class="text-blue-500"></i> Reprogram your default neurological
+                            reactions</li>
+                        <li><i data-lucide="check-circle" class="text-blue-500"></i> Architect psychological safety in
+                            teams</li>
+                        <li><i data-lucide="check-circle" class="text-blue-500"></i> Master the 6-Second Pause protocol
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="visual-side reveal fade-left relative">
+                    <div class="pillars-ring"
+                        style="display: flex; justify-content: center; align-items: center; min-height: 500px;">
+                        <!-- 10x Holographic EI Visualization SVG -->
+                        <svg viewBox="0 0 500 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="holoCore" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="1" />
+                                    <stop offset="40%" stop-color="#8b5cf6" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+                                </radialGradient>
+                                <linearGradient id="neonLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#60a5fa" />
+                                    <stop offset="100%" stop-color="#a855f7" />
+                                </linearGradient>
+                                <filter id="deepGlow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur stdDeviation="15" result="blur" />
+                                    <feComponentTransfer in="blur" result="glow">
+                                        <feFuncA type="linear" slope="1.5" />
+                                    </feComponentTransfer>
+                                    <feMerge>
+                                        <feMergeNode in="glow" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                                <filter id="ambientLight" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#3b82f6"
+                                        flood-opacity="0.8" />
+                                </filter>
+                            </defs>
+
+                            <!-- Background Ambient Pulse -->
+                            <circle cx="250" cy="250" r="180" fill="none" stroke="url(#neonLight)" stroke-opacity="0.1"
+                                stroke-width="40" filter="url(#deepGlow)">
+                                <animate attributeName="r" values="170; 190; 170" dur="8s" repeatCount="indefinite" />
+                                <animate attributeName="stroke-opacity" values="0.05; 0.15; 0.05" dur="8s"
+                                    repeatCount="indefinite" />
+                            </circle>
+
+                            <!-- Holographic Data Rings -->
+                            <g stroke="rgba(59,130,246,0.3)" fill="none" class="opacity-80">
+                                <!-- Inner Fast Ring -->
+                                <circle cx="250" cy="250" r="80" stroke-width="2" stroke-dasharray="10 5 2 5">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 250 250"
+                                        to="360 250 250" dur="10s" repeatCount="indefinite" />
+                                </circle>
+                                <!-- Mid Reverse Ring -->
+                                <circle cx="250" cy="250" r="125" stroke-width="1" stroke-dasharray="50 20 10 20"
+                                    stroke="rgba(139,92,246,0.4)">
+                                    <animateTransform attributeName="transform" type="rotate" from="360 250 250"
+                                        to="0 250 250" dur="25s" repeatCount="indefinite" />
+                                </circle>
+                                <!-- Outer Track -->
+                                <circle cx="250" cy="250" r="170" stroke-width="1" stroke="rgba(255,255,255,0.03)" />
+                                <path d="M 80 250 A 170 170 0 0 1 250 80" stroke="#3b82f6" stroke-width="2"
+                                    stroke-dasharray="20 10" filter="url(#ambientLight)">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 250 250"
+                                        to="360 250 250" dur="15s" repeatCount="indefinite" />
+                                </path>
+                            </g>
+
+                            <!-- Pulsing Energy Core -->
+                            <g filter="url(#deepGlow)">
+                                <circle cx="250" cy="250" r="45" fill="url(#holoCore)">
+                                    <animate attributeName="r" values="40; 50; 40" dur="3s" repeatCount="indefinite" />
+                                </circle>
+                                <circle cx="250" cy="250" r="25" fill="#ffffff" opacity="0.8" />
+                                <text x="250" y="254" font-family="'Outfit', sans-serif" font-weight="900"
+                                    font-size="12" fill="#0f172a" text-anchor="middle" letter-spacing="1">CORE</text>
+                            </g>
+
+                            <!-- 5 Pillar Nodes (Orbiting Matrix) -->
+                            <g>
+                                <animateTransform attributeName="transform" type="rotate" from="0 250 250"
+                                    to="360 250 250" dur="45s" repeatCount="indefinite" />
+
+                                <!-- Factory Functioning for Nodes -->
+                                <!-- Node 1: Self Awareness -->
+                                <g transform="translate(250, 80)">
+                                    <circle cx="0" cy="0" r="35" fill="rgba(3,3,5,0.9)" stroke="#60a5fa"
+                                        stroke-width="2" filter="url(#ambientLight)" />
+                                    <!-- Scanning line inner -->
+                                    <circle cx="0" cy="0" r="28" fill="none" stroke="#60a5fa" stroke-width="1"
+                                        stroke-dasharray="40 60">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 0 0"
+                                            to="360 0 0" dur="4s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="0" cy="0" r="4" fill="#60a5fa" filter="url(#deepGlow)" />
+
+                                    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="13"
+                                        fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="1">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 0 0"
+                                            to="-360 0 0" dur="45s" repeatCount="indefinite" />
+                                        SELF-AWARENESS
+                                    </text>
+                                </g>
+
+                                <!-- Node 2: Regulation -->
+                                <g transform="translate(411, 197)">
+                                    <circle cx="0" cy="0" r="35" fill="rgba(3,3,5,0.9)" stroke="#c084fc"
+                                        stroke-width="2" filter="url(#ambientLight)" />
+                                    <circle cx="0" cy="0" r="28" fill="none" stroke="#c084fc" stroke-width="1"
+                                        stroke-dasharray="20 40">
+                                        <animateTransform attributeName="transform" type="rotate" from="360 0 0"
+                                            to="0 0 0" dur="5s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="0" cy="0" r="4" fill="#c084fc" filter="url(#deepGlow)" />
+                                    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="13"
+                                        fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="1">
+                                        <animateTransform attributeName="transform" type="rotate" from="-126 0 0"
+                                            to="-486 0 0" dur="45s" repeatCount="indefinite" />
+                                        REGULATION
+                                    </text>
+                                </g>
+
+                                <!-- Node 3: Motivation -->
+                                <g transform="translate(350, 387)">
+                                    <circle cx="0" cy="0" r="35" fill="rgba(3,3,5,0.9)" stroke="#facc15"
+                                        stroke-width="2" filter="url(#ambientLight)" />
+                                    <circle cx="0" cy="0" r="28" fill="none" stroke="#facc15" stroke-width="1"
+                                        stroke-dasharray="60 40">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 0 0"
+                                            to="360 0 0" dur="6s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="0" cy="0" r="4" fill="#facc15" filter="url(#deepGlow)" />
+                                    <text x="0" y="-50" font-family="'Plus Jakarta Sans', sans-serif" font-size="13"
+                                        fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="1">
+                                        <animateTransform attributeName="transform" type="rotate" from="-234 0 0"
+                                            to="-594 0 0" dur="45s" repeatCount="indefinite" />
+                                        MOTIVATION
+                                    </text>
+                                </g>
+
+                                <!-- Node 4: Empathy -->
+                                <g transform="translate(150, 387)">
+                                    <circle cx="0" cy="0" r="35" fill="rgba(3,3,5,0.9)" stroke="#f472b6"
+                                        stroke-width="2" filter="url(#ambientLight)" />
+                                    <circle cx="0" cy="0" r="28" fill="none" stroke="#f472b6" stroke-width="1"
+                                        stroke-dasharray="30 20">
+                                        <animateTransform attributeName="transform" type="rotate" from="360 0 0"
+                                            to="0 0 0" dur="4s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="0" cy="0" r="4" fill="#f472b6" filter="url(#deepGlow)" />
+                                    <text x="0" y="-50" font-family="'Plus Jakarta Sans', sans-serif" font-size="13"
+                                        fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="1">
+                                        <animateTransform attributeName="transform" type="rotate" from="-306 0 0"
+                                            to="-666 0 0" dur="45s" repeatCount="indefinite" />
+                                        EMPATHY
+                                    </text>
+                                </g>
+
+                                <!-- Node 5: Social Skills -->
+                                <g transform="translate(89, 197)">
+                                    <circle cx="0" cy="0" r="35" fill="rgba(3,3,5,0.9)" stroke="#2dd4bf"
+                                        stroke-width="2" filter="url(#ambientLight)" />
+                                    <circle cx="0" cy="0" r="28" fill="none" stroke="#2dd4bf" stroke-width="1"
+                                        stroke-dasharray="10 30 50">
+                                        <animateTransform attributeName="transform" type="rotate" from="0 0 0"
+                                            to="360 0 0" dur="3s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="0" cy="0" r="4" fill="#2dd4bf" filter="url(#deepGlow)" />
+                                    <text x="0" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="13"
+                                        fill="#e2e8f0" text-anchor="middle" font-weight="700" letter-spacing="1">
+                                        <animateTransform attributeName="transform" type="rotate" from="-414 0 0"
+                                            to="-774 0 0" dur="45s" repeatCount="indefinite" />
+                                        SOCIAL SKILLS
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Anger Management Section -->
+    <section class="anger-section section-padding bg-darker relative" id="anger">
+        <!-- Background graphics -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+
+        <div class="container relative z-10">
+            <div class="section-header text-center max-w-3xl mx-auto reveal fade-up mb-16">
+                <div class="section-kicker badge-fire mx-auto mb-4">Module 02</div>
+                <h2 class="section-title font-outfit text-white text-5xl">From Destruction to <span
+                        class="gradient-text gradient-fire">Direction</span></h2>
+                <p class="section-desc text-gray-400 font-jakarta text-lg mt-4">Anger is an evolutionary signal, but a
+                    terrible master. Discover how to harvest the energy of anger while neutralizing its destructive
+                    radius.</p>
+            </div>
+
+            <!-- 10x Holographic Interactive Iceberg SVG -->
+            <div class="iceberg-interactive-container reveal fade-up delay-1"
+                style="display: flex; justify-content: center; align-items: center;">
+                <svg viewBox="0 0 600 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    class="tilt-element">
+                    <defs>
+                        <!-- Dramatic deep ocean gradient -->
+                        <linearGradient id="abyssWater" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.4" />
+                            <stop offset="40%" stop-color="#172554" stop-opacity="0.8" />
+                            <stop offset="100%" stop-color="#020617" stop-opacity="1" />
+                        </linearGradient>
+
+                        <!-- God Rays -->
+                        <linearGradient id="godRays" x1="50%" y1="0%" x2="50%" y2="100%">
+                            <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.3" />
+                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+                        </linearGradient>
+
+                        <!-- Holographic Frost Texture -->
+                        <linearGradient id="holoIce" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+                            <stop offset="50%" stop-color="#93c5fd" stop-opacity="0.8" />
+                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.6" />
+                        </linearGradient>
+
+                        <linearGradient id="deepHoloIce" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.7" />
+                            <stop offset="50%" stop-color="#1e3a8a" stop-opacity="0.4" />
+                            <stop offset="100%" stop-color="#020617" stop-opacity="0.1" />
+                        </linearGradient>
+
+                        <!-- Filters -->
+                        <filter id="oceanDistortion">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.05" numOctaves="3" result="noise">
+                                <animate attributeName="baseFrequency" values="0.008 0.05; 0.012 0.08; 0.008 0.05"
+                                    dur="15s" repeatCount="indefinite" />
+                            </feTurbulence>
+                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R"
+                                yChannelSelector="G" />
+                        </filter>
+
+                        <filter id="ultraGlow" x="-30%" y="-30%" width="160%" height="160%">
+                            <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#3b82f6" flood-opacity="0.6" />
+                        </filter>
+                    </defs>
+
+                    <!-- Background Deep Water Base -->
+                    <rect x="0" y="150" width="600" height="350" fill="url(#abyssWater)" />
+
+                    <!-- God Rays (Light shining down) -->
+                    <g opacity="0.6">
+                        <polygon points="150,150 250,500 100,500" fill="url(#godRays)" filter="url(#oceanDistortion)" />
+                        <polygon points="300,150 450,500 250,500" fill="url(#godRays)" filter="url(#oceanDistortion)" />
+                        <polygon points="450,150 550,500 400,500" fill="url(#godRays)" filter="url(#oceanDistortion)" />
+                    </g>
+
+                    <!-- Animated Rising Bubbles -->
+                    <g fill="#60a5fa" opacity="0.4">
+                        <circle cx="200" cy="480" r="3">
+                            <animate attributeName="cy" values="480; 150" dur="4s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="0; 0.6; 0" dur="4s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="250" cy="450" r="5">
+                            <animate attributeName="cy" values="450; 150" dur="6s" repeatCount="indefinite"
+                                begin="1s" />
+                            <animate attributeName="opacity" values="0; 0.4; 0" dur="6s" repeatCount="indefinite"
+                                begin="1s" />
+                        </circle>
+                        <circle cx="350" cy="490" r="2">
+                            <animate attributeName="cy" values="490; 150" dur="3s" repeatCount="indefinite"
+                                begin="2s" />
+                            <animate attributeName="opacity" values="0; 0.8; 0" dur="3s" repeatCount="indefinite"
+                                begin="2s" />
+                        </circle>
+                        <circle cx="420" cy="460" r="4">
+                            <animate attributeName="cy" values="460; 150" dur="5s" repeatCount="indefinite"
+                                begin="0.5s" />
+                            <animate attributeName="opacity" values="0; 0.5; 0" dur="5s" repeatCount="indefinite"
+                                begin="0.5s" />
+                        </circle>
+                        <circle cx="300" cy="500" r="6">
+                            <animate attributeName="cy" values="500; 150" dur="7s" repeatCount="indefinite"
+                                begin="1.5s" />
+                            <animate attributeName="opacity" values="0; 0.3; 0" dur="7s" repeatCount="indefinite"
+                                begin="1.5s" />
+                        </circle>
+                    </g>
+
+                    <!-- Animated Waterline Surface Layer -->
+                    <path d="M0 150 Q 150 135 300 150 T 600 150 L 600 170 L 0 170 Z" fill="url(#abyssWater)"
+                        opacity="0.8" filter="url(#oceanDistortion)">
+                        <animate attributeName="d"
+                            values="M0 150 Q 150 135 300 150 T 600 150 L 600 170 L 0 170 Z; M0 150 Q 150 165 300 150 T 600 150 L 600 170 L 0 170 Z; M0 150 Q 150 135 300 150 T 600 150 L 600 170 L 0 170 Z"
+                            dur="8s" repeatCount="indefinite" />
+                    </path>
+
+                    <line x1="0" y1="150" x2="600" y2="150" stroke="#3b82f6" stroke-width="2" stroke-dasharray="2 4"
+                        stroke-opacity="0.8" />
+                    <text x="580" y="140" font-family="'Outfit', sans-serif" font-weight="800" font-size="12"
+                        fill="#93c5fd" text-anchor="end" letter-spacing="2" filter="url(#ultraGlow)">THE WATERLINE (10%
+                        Visible)</text>
+
+                    <!-- The 90% Submerged Iceberg Array (Multi-Layered for depth) -->
+                    <g filter="url(#oceanDistortion)">
+                        <!-- Back layer ice -->
+                        <path d="M120 150 L180 350 L250 400 L280 150 Z" fill="#1e3a8a" opacity="0.3" />
+                        <!-- Main Submerged Ice -->
+                        <path d="M150 150 L200 450 L400 480 L520 250 L480 150 Z" fill="url(#deepHoloIce)" />
+
+                        <!-- Internal glowing fracture lines -->
+                        <path d="M250 150 L220 300 L300 450" fill="none" stroke="#60a5fa" stroke-width="2"
+                            stroke-opacity="0.3" />
+                        <path d="M350 150 L400 350 L450 250" fill="none" stroke="#60a5fa" stroke-width="1"
+                            stroke-opacity="0.2" />
+                    </g>
+
+                    <!-- Submerged Text Nodes with floating drift dynamics -->
+                    <g font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" fill="rgba(255,255,255,0.7)"
+                        text-anchor="middle">
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-8; 0,0"
+                                dur="6s" repeatCount="indefinite" />
+                            <text x="300" y="240" font-size="24" fill="#93c5fd"
+                                filter="url(#ultraGlow)">Exhaustion</text>
+                            <circle cx="300" cy="230" r="35" fill="none" stroke="#3b82f6" stroke-width="1"
+                                stroke-dasharray="4 6" opacity="0.3" />
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0"
+                                dur="4.5s" repeatCount="indefinite" />
+                            <text x="230" y="300" font-size="18" opacity="0.8">Fear</text>
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; -4,0; 0,0"
+                                dur="7s" repeatCount="indefinite" />
+                            <text x="370" y="310" font-size="20" fill="#60a5fa" opacity="0.9">Humiliation</text>
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0"
+                                dur="5.5s" repeatCount="indefinite" />
+                            <text x="280" y="370" font-size="18" opacity="0.7">Injustice</text>
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 4,-5; 0,0"
+                                dur="8s" repeatCount="indefinite" />
+                            <text x="350" y="410" font-size="22" fill="#bfdbfe"
+                                filter="url(#ultraGlow)">Overwhelmed</text>
+                            <circle cx="350" cy="405" r="25" fill="none" stroke="#60a5fa" stroke-width="1"
+                                stroke-dasharray="2 4" opacity="0.2" />
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0"
+                                dur="5s" repeatCount="indefinite" />
+                            <text x="250" y="440" font-size="16" opacity="0.5">Unseen</text>
+                        </g>
+                    </g>
+
+                    <!-- The 10% Visible Iceberg Top (Holographic) -->
+                    <g filter="url(#ultraGlow)">
+                        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="5s"
+                            repeatCount="indefinite" />
+                        <path d="M200 150 L250 40 L360 60 L410 150 Z" fill="url(#holoIce)" />
+                        <!-- Shiny Edge Highlights -->
+                        <path d="M200 150 L250 40 L360 60" fill="none" stroke="#ffffff" stroke-width="3"
+                            stroke-opacity="0.8" />
+                    </g>
+
+                    <!-- Visible Behaviors (Text on top) -->
+                    <g font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="12" fill="#0f172a"
+                        text-anchor="middle">
+                        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="5s"
+                            repeatCount="indefinite" />
+                        <text x="305" y="80" letter-spacing="1">Yelling</text>
+                        <text x="260" y="105" letter-spacing="1">Sarcasm</text>
+                        <text x="345" y="105" letter-spacing="1">Silence</text>
+                        <text x="305" y="130" letter-spacing="1">Aggression</text>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="tactical-tools-grid mt-20">
+                <div class="tool-card premium-glass reveal fade-up group cursor-pointer"
+                    onclick="this.classList.toggle('expanded')">
+                    <div
+                        class="tool-icon bg-red-500/20 text-red-500 group-hover:bg-red-500 group-hover:text-white transition-all">
+                        <i data-lucide="wind"></i>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 mb-2">
+                        <h3 class="text-white font-outfit text-xl">Box Breathing</h3>
+                        <i data-lucide="chevron-down" class="text-gray-500 expanded-icon"></i>
+                    </div>
+                    <p class="text-gray-400 font-jakarta text-sm leading-relaxed">4-4-4-4 counting methodology used by
+                        Navy SEALs to manually override the autonomic nervous system and halt adrenaline.</p>
+                    <div class="tool-details">
+                        <ul class="text-sm font-jakarta text-gray-300 space-y-2 border-t border-white/10 pt-4">
+                            <li class="flex items-start gap-2"><span class="text-red-400 font-bold">1.</span> Inhale
+                                deeply for 4 seconds.</li>
+                            <li class="flex items-start gap-2"><span class="text-red-400 font-bold">2.</span> Hold the
+                                air in your lungs for 4 seconds.</li>
+                            <li class="flex items-start gap-2"><span class="text-red-400 font-bold">3.</span> Exhale
+                                smoothly for 4 seconds.</li>
+                            <li class="flex items-start gap-2"><span class="text-red-400 font-bold">4.</span> Hold your
+                                lungs empty for 4 seconds.</li>
+                            <li class="text-xs text-gray-500 mt-2 italic">Repeat cycle 4 times to reset the vagus nerve.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card premium-glass reveal fade-up delay-1 group cursor-pointer"
+                    onclick="this.classList.toggle('expanded')">
+                    <div
+                        class="tool-icon bg-purple-500/20 text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 mb-2">
+                        <h3 class="text-white font-outfit text-xl">Cognitive Restructuring</h3>
+                        <i data-lucide="chevron-down" class="text-gray-500 expanded-icon"></i>
+                    </div>
+                    <p class="text-gray-400 font-jakarta text-sm leading-relaxed">The ABCDE model to catch distorted
+                        thoughts (catastrophizing) before they mutate into uncontrollable emotional states.</p>
+                    <div class="tool-details">
+                        <ul class="text-sm font-jakarta text-gray-300 space-y-2 border-t border-white/10 pt-4">
+                            <li><span class="text-purple-400 font-bold">A</span>ctivating Event: What triggered you?
+                            </li>
+                            <li><span class="text-purple-400 font-bold">B</span>elief: What did you tell yourself?</li>
+                            <li><span class="text-purple-400 font-bold">C</span>onsequence: How did you react?</li>
+                            <li><span class="text-purple-400 font-bold">D</span>ispute: Is that belief 100% true?</li>
+                            <li><span class="text-purple-400 font-bold">E</span>ffect: Replace with rational thought.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tool-card premium-glass reveal fade-up delay-2 group cursor-pointer"
+                    onclick="this.classList.toggle('expanded')">
+                    <div
+                        class="tool-icon bg-blue-500/20 text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                        <i data-lucide="pause-circle"></i>
+                    </div>
+                    <div class="flex justify-between items-center mt-4 mb-2">
+                        <h3 class="text-white font-outfit text-xl">The 6-Second Pause</h3>
+                        <i data-lucide="chevron-down" class="text-gray-500 expanded-icon"></i>
+                    </div>
+                    <p class="text-gray-400 font-jakarta text-sm leading-relaxed">The exact window required for the
+                        prefrontal cortex to process emotion, preventing the infamous Amygdala Hijack.</p>
+                    <div class="tool-details">
+                        <p class="text-sm font-jakarta text-gray-300 border-t border-white/10 pt-4 mb-2">
+                            Emotion travels to the emotional center (amygdala) faster than the logic center (prefrontal
+                            cortex).
+                        </p>
+                        <ol
+                            class="text-sm font-jakarta text-gray-300 space-y-1 list-decimal list-inside marker:text-blue-400 marker:font-bold">
+                            <li>Feel the trigger spike.</li>
+                            <li>Stop all physical movement.</li>
+                            <li>Count slowly to six.</li>
+                            <li>Respond, do not react.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Conflict Section -->
+    <section class="conflict-section section-padding relative" id="conflict">
+        <div class="container">
+            <div class="grid-2-col gap-16 items-center">
+
+                <div class="visual-side reveal fade-right order-2 md:order-1 relative">
+                    <!-- Interactive Terminal Window -->
+                    <div class="terminal-window glass-panel premium-border tilt-element" data-tilt-max="3">
+                        <div class="terminal-header">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <div class="window-title font-outfit text-xs text-gray-500 tracking-widest">
+                                D.E.S.C_SCRIPT_BUILDER.exe</div>
+                        </div>
+                        <div class="terminal-body font-jakarta text-sm p-6 leading-loose text-gray-300">
+                            <div class="typing-line">
+                                <span class="text-purple-400 font-bold">D</span>escribe: <span class="text-white">"When
+                                    you missed the critical sprint deadline..."</span>
+                            </div>
+                            <div class="typing-line delay-1">
+                                <span class="text-purple-400 font-bold">E</span>xpress: <span class="text-white">"...I
+                                    felt anxious about our delivery pledge."</span>
+                            </div>
+                            <div class="typing-line delay-2">
+                                <span class="text-purple-400 font-bold">S</span>pecify: <span class="text-white">"...I
+                                    need you to flag blockages 24H early."</span>
+                            </div>
+                            <div
+                                class="typing-line delay-3 highlight-line bg-teal-500/20 border-l-2 border-teal-500 pl-3 py-1 my-2 rounded-r">
+                                <span class="text-teal-400 font-bold">C</span>onsequences: <span
+                                    class="text-white font-medium">"...so we hit targets effortlessly together."</span>
+                            </div>
+                            <div class="typing-line delay-4 mt-4">
+                                <span class="text-green-400">> Execute Protocol.</span> <span
+                                    class="cursor-blink">_</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decor -->
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl z-0"></div>
+                </div>
+
+                <div class="content-side reveal fade-left order-1 md:order-2">
+                    <div class="section-kicker badge-teal mb-4">Module 03</div>
+                    <h2 class="section-title font-outfit text-white text-5xl mb-6">Turning Friction into <span
+                            class="gradient-text gradient-teal">Fuel</span></h2>
+
+                    <p class="body-text text-gray-400 font-jakarta text-lg mb-6 leading-relaxed">
+                        Conflict is inevitable. Combat is an operational choice. Learn to dissect the Thomas-Kilmann
+                        styles and deploy the DESC script to turn tension into collaborative momentum.
+                    </p>
+
+                    <!-- Animated Conflict Matrix SVG -->
+                    <div class="matrix-list mt-8 space-y-4">
+                        <!-- 10x Holographic Conflict Matrix SVG -->
+                        <svg viewBox="0 0 500 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            class="tilt-element border border-white/10 rounded-xl bg-white/5 backdrop-blur-md">
+                            <defs>
+                                <linearGradient id="competeGlowHolo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#ef4444" stop-opacity="0.9" />
+                                    <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0.3" />
+                                </linearGradient>
+                                <linearGradient id="collabGlowHolo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.9" />
+                                    <stop offset="100%" stop-color="#115e59" stop-opacity="0.3" />
+                                </linearGradient>
+                                <linearGradient id="accomGlowHolo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.9" />
+                                    <stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.3" />
+                                </linearGradient>
+                                <filter id="matrixGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#ffffff"
+                                        flood-opacity="0.2" />
+                                </filter>
+                                <pattern id="holoGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)"
+                                        stroke-width="1" />
+                                </pattern>
+                            </defs>
+
+                            <!-- Background Grid Pattern -->
+                            <rect width="500" height="400" fill="url(#holoGrid)" opacity="0.5" />
+
+                            <!-- Scanning Target Line -->
+                            <path d="M 0 50 L 500 50" stroke="rgba(59,130,246,0.3)" stroke-width="2">
+                                <animate attributeName="d" values="M 0 50 L 500 50; M 0 350 L 500 350; M 0 50 L 500 50"
+                                    dur="4s" repeatCount="indefinite" />
+                            </path>
+
+                            <!-- Axes Grid with Glowing Tips -->
+                            <line x1="50" y1="350" x2="450" y2="350" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+                            <line x1="50" y1="50" x2="50" y2="350" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+                            <path d="M440 345 L450 350 L440 355 Z" fill="#60a5fa" filter="url(#matrixGlow)" />
+                            <path d="M45 60 L50 50 L55 60 Z" fill="#60a5fa" filter="url(#matrixGlow)" />
+
+                            <!-- Labels -->
+                            <text x="50" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="12"
+                                fill="#9ca3af" font-weight="800" letter-spacing="2">ASSERTIVENESS (Focus on Self)</text>
+                            <text x="450" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="12"
+                                fill="#9ca3af" font-weight="800" text-anchor="end" letter-spacing="2">COOPERATIVENESS
+                                (Focus on Others)</text>
+
+                            <!-- Data Points (Orbiting Data Nodes) -->
+                            <!-- Node 1: Competing (Top Left) -->
+                            <g transform="translate(150, 150)" filter="url(#matrixGlow)">
+                                <rect x="-75" y="-45" width="150" height="90" rx="4" fill="url(#competeGlowHolo)"
+                                    stroke="#f87171" stroke-width="2">
+                                    <animate attributeName="opacity" values="0.8; 1; 0.8" dur="3s"
+                                        repeatCount="indefinite" />
+                                </rect>
+                                <circle cx="-75" cy="-45" r="4" fill="#ffffff" />
+                                <circle cx="75" cy="45" r="4" fill="#ffffff" />
+                                <text x="0" y="-5" font-family="'Outfit', sans-serif" font-size="16" fill="white"
+                                    font-weight="900" text-anchor="middle">Competing</text>
+                                <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                                    fill="rgba(255,255,255,0.8)" text-anchor="middle" font-weight="600">High Assert •
+                                    Low Co-op</text>
+                            </g>
+
+                            <!-- Node 2: Collaborating (Top Right) -->
+                            <g transform="translate(350, 150)" filter="url(#matrixGlow)">
+                                <rect x="-75" y="-45" width="150" height="90" rx="4" fill="url(#collabGlowHolo)"
+                                    stroke="#2dd4bf" stroke-width="2">
+                                    <animate attributeName="opacity" values="0.8; 1; 0.8" dur="3s"
+                                        repeatCount="indefinite" begin="1s" />
+                                </rect>
+                                <circle cx="-75" cy="-45" r="4" fill="#ffffff" />
+                                <circle cx="75" cy="45" r="4" fill="#ffffff" />
+                                <text x="0" y="-5" font-family="'Outfit', sans-serif" font-size="16" fill="white"
+                                    font-weight="900" text-anchor="middle">Collaborating</text>
+                                <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                                    fill="rgba(255,255,255,0.8)" text-anchor="middle" font-weight="600">High Assert •
+                                    High Co-op</text>
+                            </g>
+
+                            <!-- Node 3: Accommodating (Bottom Right) -->
+                            <g transform="translate(350, 270)" filter="url(#matrixGlow)">
+                                <rect x="-75" y="-45" width="150" height="90" rx="4" fill="url(#accomGlowHolo)"
+                                    stroke="#60a5fa" stroke-width="2">
+                                    <animate attributeName="opacity" values="0.8; 1; 0.8" dur="3s"
+                                        repeatCount="indefinite" begin="2s" />
+                                </rect>
+                                <circle cx="-75" cy="-45" r="4" fill="#ffffff" />
+                                <circle cx="75" cy="45" r="4" fill="#ffffff" />
+                                <text x="0" y="-5" font-family="'Outfit', sans-serif" font-size="16" fill="white"
+                                    font-weight="900" text-anchor="middle">Accommodating</text>
+                                <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                                    fill="rgba(255,255,255,0.8)" text-anchor="middle" font-weight="600">Low Assert •
+                                    High Co-op</text>
+                            </g>
+
+                            <!-- Avoiding (Bottom Left) -->
+                            <g transform="translate(150, 270)" filter="url(#matrixGlow)">
+                                <rect x="-75" y="-45" width="150" height="90" rx="4" fill="rgba(20,20,30,0.8)"
+                                    stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-dasharray="6 4">
+                                    <animate attributeName="stroke-dashoffset" from="100" to="0" dur="4s"
+                                        repeatCount="indefinite" />
+                                </rect>
+                                <circle cx="-75" cy="-45" r="4" fill="rgba(255,255,255,0.4)" />
+                                <circle cx="75" cy="45" r="4" fill="rgba(255,255,255,0.4)" />
+                                <text x="0" y="-5" font-family="'Outfit', sans-serif" font-size="16"
+                                    fill="rgba(255,255,255,0.5)" font-weight="700" text-anchor="middle">Avoiding</text>
+                                <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11"
+                                    fill="rgba(255,255,255,0.4)" text-anchor="middle">Low Assert • Low Co-op</text>
+                            </g>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Super CTA Section -->
+    <section class="super-cta-section relative mt-20" id="action">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#0f172a] to-transparent"></div>
+
+        <div class="container relative z-10 py-32">
+            <div
+                class="premium-cta-card glass-panel premium-border text-center max-w-4xl mx-auto p-12 md:p-20 overflow-hidden relative">
+                <!-- Internal Glows -->
+                <div
+                    class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2">
+                </div>
+
+                <h2 class="text-4xl md:text-6xl font-outfit font-bold text-white mb-6 relative z-10 tracking-tight">
+                    Start Your <span class="gradient-text gradient-primary">30-Day</span> Protocol.
+                </h2>
+                <p class="text-xl text-gray-400 font-jakarta mb-10 max-w-2xl mx-auto relative z-10 leading-relaxed">
+                    Insight without action is just entertainment. Download the digital
+                    workbook to begin rewiring your leadership habits today.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+                    <a href="workbook.pdf" download class="btn btn-primary btn-xl btn-glow group">
+                        <i data-lucide="book" class="group-hover:-translate-y-1 transition-transform"></i>
+                        Download PDF Workbook
+                    </a>
+                </div>
+
+                <p class="mt-8 text-sm text-gray-500 font-outfit uppercase tracking-widest relative z-10">Secure Direct
+                    Downloads • No email required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer bg-[#020617] border-t border-white/5 py-12">
+        <div class="container flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="logo group flex items-center gap-2">
+                <i data-lucide="zap" class="text-blue-500"></i>
+                <span class="text-white font-outfit font-bold tracking-wider">EMOTIONAL MASTERY</span>
+            </div>
+
+            <p class="text-gray-500 font-jakarta text-sm">© 2026 Executive Protocols. Designed for elite leadership.</p>
+
+            <div class="social-links flex gap-4">
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-500 hover:border-blue-500 transition-all shadow-lg"><i
+                        data-lucide="linkedin" class="w-4 h-4"></i></a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-400 hover:border-blue-400 transition-all shadow-lg"><i
+                        data-lucide="twitter" class="w-4 h-4"></i></a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-red-500 hover:border-red-500 transition-all shadow-lg"><i
+                        data-lucide="mail" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
